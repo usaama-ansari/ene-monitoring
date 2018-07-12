@@ -1,0 +1,45 @@
+div.tiles-row{
+  
+    border-radius:5px
+}
+
+div.tile-wpr{
+    padding:3px;
+   
+    
+}
+div.inr-wpr{
+    padding:5px;
+    /*  */
+    background: linear-gradient(to bottom right, rgb(129, 129, 129), rgb(0, 0, 0));
+    box-shadow:2px 2px 3px rgba(0,0,0,0.4);
+    border-radius:10px;
+}
+
+
+div.tile-header{
+    background:#0aa9da;
+    height:80px;
+    border-radius:5px;
+}
+div.tile-content{
+    height:80px;
+    
+    border-radius:5px;
+}
+.pHead{
+    border-radius:5px;
+    color:white;
+    font-weight:bold;
+    text-align: center;
+}
+
+.pVal{
+    color:white
+}
+
+.updatetime{
+    padding:0px;
+    margin:0px;
+    font-size:0.8em
+}

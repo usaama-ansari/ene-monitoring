@@ -1,0 +1,40 @@
+.crd-bg{
+/* background-image:url('../../../../assets/wind_pane.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover; */
+}
+
+div.crd{
+    background-color:white;
+    border-radius:2px;
+    box-shadow:4px 4px 20px rgba(0,0,0,0.5)
+}
+
+div.crd-left{
+    width:30%;
+    height:120px;
+    padding:10px ;   
+    color:white;
+    background:rgb(158, 45, 83)
+}
+
+div.crd-right{
+    width:70%;
+    padding:10px;
+    height:120px;
+}
+
+@media screen and (min-width: 768px) {
+    div.crd-left{
+        height:200px;
+  
+    }
+    
+    div.crd-right{
+        height:200px;
+    }
+  }
+  
+
+

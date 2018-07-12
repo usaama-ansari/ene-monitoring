@@ -1,0 +1,9 @@
+div.spinner-wpr{
+    height:100%;
+    z-index: 1000;
+    width:100%;
+    position:fixed;
+    left:0px;
+    top:0px;
+    background:rgba(0,0,0,0.3)
+  }

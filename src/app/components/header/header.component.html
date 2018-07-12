@@ -1,0 +1,12 @@
+<mat-toolbar class="fixed-top">
+    <div class="pl-2">
+        <i (click)="sidenav.toggle()" class="fa fa-bars mr-2 cursor"></i>
+        <a class="plain-a" routerLink="/monitoring-dashboard">NextSense</a>
+    </div>
+    <div class="ml-auto" style="font-size:0.8em">
+        <span class="mr-3" >{{customer_name | titlecase}}</span>
+        <a (click)="logOut()" class="plain-a cursor">
+            <i class="fa fa-sign-out mr-1"></i> Log out</a>
+    </div>
+</mat-toolbar>
+<div class="sticky-fix"></div>

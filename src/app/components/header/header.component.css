@@ -1,0 +1,28 @@
+
+
+.logo{
+    width:50px;
+}
+
+.plain-a{
+    text-decoration: none;
+    color:rgb(145, 145, 145) !important;
+}
+  
+.plain-a:hover{
+    text-decoration: none;
+    color:rgb(145, 145, 145) !important;
+}
+
+mat-toolbar{
+   background:rgb(255, 255, 255);
+   color:rgb(160, 160, 160);
+   box-shadow:2px 2px 8px rgba(0,0,0,0.3); 
+}
+
+
+@media screen and (min-width: 768px) {
+    div.hdr-wpr{
+        background-position: top
+    }
+  }

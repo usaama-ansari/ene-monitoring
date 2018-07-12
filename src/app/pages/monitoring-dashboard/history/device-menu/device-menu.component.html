@@ -1,0 +1,23 @@
+<div class="container-fluid ">
+  <div class=" mt-4" *ngIf="!_monS.devices_exist;else devicesExist">
+    <h2 class="lead">No devices found.</h2>
+    <button mat-raised-button color="accent" routerLink="/monitoring-dashboard">Add Devices</button>
+  </div>
+
+  <ng-template #devicesExist>
+    <div class="row">
+        <div class="col-xs-12 col-md-4 mb-2">
+            <div role="link" routerLink="{{device.device_name}}" *ngFor="let device of devices" class="crd d-flex cursor">
+              <div class="crd-left d-flex justify-content-center align-items-center" style="background:rgb(196, 65, 109)">
+                <img src="assets/icons/wms.png" class="img-responsive" width="100" />
+              </div>
+              <div class="crd-right d-flex justify-content-center align-items-center">
+               <h3  class="m-0">{{device.device_name | uppercase}}</h3>
+              </div>
+            </div>
+          </div>
+    </div>
+  </ng-template>
+
+</div>
+

@@ -1,0 +1,17 @@
+<div class="container-fluid tiles-wpr">
+  <div class="row">
+    <div class="col-12">
+      <app-tiles [tileData]="realtimeData"></app-tiles>
+    </div>
+    <div class="col-12">
+      <hr>
+    </div>
+    <div class="col-xs-12  col-md-5 wr-wpr">
+      <app-wind-rose [windRoseData]="windroseData"></app-wind-rose>
+    </div>
+    <div class="col-xs-12 col-md-7 graph-wpr">
+      <app-wms-graph [graphData]="graphData"></app-wms-graph>
+    </div>
+  </div>
+  
+</div>

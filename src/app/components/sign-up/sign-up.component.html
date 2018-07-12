@@ -1,0 +1,56 @@
+
+<div class="form-wpr animated fadeIn">
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-card-title>
+        <h2 class="lead"><i class="fa fa-users mr-2" style="color:rgb(22, 146, 204)"></i> Customer Signup</h2>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form ngNativeValidate (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <mat-form-field>
+            <input matInput placeholder="Email" type="email" name="email"  ngModel required>            
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="password" type="password" placeholder="Password" ngModel required>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput name="custname" type="text" placeholder="Customer name" ngModel >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="firmname" type="text" placeholder="Firm Name" ngModel >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="phone" type="text" placeholder="Phone" ngModel>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="address" type="text" placeholder="Address" ngModel>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="city" type="text" placeholder="City" ngModel>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="country" type="text" placeholder="Country" ngModel>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="zip" type="text" placeholder="Zip code" ngModel>
+        </mat-form-field>
+        <br/>
+        <button type="submit" style="background:rgb(22, 146, 204);color:white" mat-raised-button>Sign up</button>
+        <button routerLink="/login" type="button"  color="basic" mat-button>Log in</button>
+
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+
+  
+  
+ 
+  
+  
+  
+  
+  

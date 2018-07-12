@@ -1,0 +1,20 @@
+<div class="container-fluid ">
+  <div class="row crd-bg pt-5 pb-5">
+    <div class="col-xs-12 col-lg-8 offset-lg-2  mb-2" *ngFor="let device of devices">
+      <div role="link" class="crd d-flex">
+        <div class="crd-left d-flex justify-content-center align-items-center" style="background:rgb(196, 65, 109)">
+         <img src="assets/icons/{{device.device_name}}.png" width="130" />
+        </div>
+        <div class="crd-right d-flex justify-content-center align-items-center">
+          <div class="w-100">
+            <h2 class="m-0 text-center">{{device.device_name | uppercase}} <span class="badge badge-info">{{device.device_ids.length}}</span></h2>
+            <hr>
+            <div class="pl-3 pr-3">
+              <i class="fa fa-plus fa-2x cursor mr-2" ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+.background {  
+  position:absolute;
+  display: block; 
+  top: 0;
+  left:0;
+  z-index: 0;
+
+  }
+
+  .parent-container{
+    height:100vh;
+    background-image: url('../../../assets/bg.png');
+    background-size:cover;
+}
+
+div.spinner-wpr{
+  height:100%;
+  z-index: 100;
+  width:100%;
+  position:fixed;
+  left:0px;
+  top:0px;
+  background:rgba(0,0,0,0.2)
+}
+
+
+div.router-wpr{
+  padding-top:50px;
+}

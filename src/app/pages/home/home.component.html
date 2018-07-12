@@ -1,0 +1,16 @@
+
+<app-loader *ngIf="showLoader"></app-loader>
+<div class="parent-container animated fadeIn">
+    <div class="router-wpr container">
+        <div class="row ">
+            <div class="col-xs-12 col-md-6">
+                <router-outlet></router-outlet>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <img class="img-fluid" src="assets/nst-logo.png" style="max-width:120px" />
+                <img class="img-fluid" src="assets/login.png" style="margin-top:-50px">
+            </div>
+        </div>
+    </div>
+</div>
+

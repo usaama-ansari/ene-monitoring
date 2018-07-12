@@ -1,0 +1,26 @@
+<app-header [sidenav]="sidenav"></app-header>
+<mat-sidenav-container >
+  <mat-sidenav class="p-0 pt-3" fixedTopGap="58" fixedInViewport="true" [mode]="(isHandset | async)!.matches ?'over':'side'"
+   [attr.role]="isHandset?'dialog':'navigation'" [opened]="!(isHandset | async)!.matches" #sidenav>
+    <div class="sidenav-header d-flex justify-content-center align-items-center">
+      <h4 class="lead ">Connecting Dots</h4>
+    </div>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/monitoring-dashboard" (click)="dismiss()">
+        <i class="fa fa-home mr-3"></i>Home</a>
+      <a mat-list-item (click)="dismiss()">
+        <i class="fa fa-user mr-3"></i>Profile</a>
+      <a mat-list-item  routerLink="manage-devices" (click)="dismiss()">
+        <i class="fa fa-cubes mr-3"></i>Manage devices</a>
+      <a mat-list-item routerLink="history" (click)="dismiss()">
+        <i class="fa fa-history mr-3"></i>History</a>
+      <a mat-list-item (click)="dismiss()">
+        <i class="fa fa-file mr-3"></i>Reports</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content role="main" class="pl-2 pr-2">
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

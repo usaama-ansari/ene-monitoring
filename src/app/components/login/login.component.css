@@ -1,0 +1,38 @@
+
+
+
+/* SPIDEYS CSS END*/
+
+mat-card{
+    padding:30px
+}
+mat-form-field{
+    width:100%;
+    margin-bottom:50px
+}
+
+ .login-card{
+    max-width: 500px;
+  }
+  
+
+ div.form-wpr{
+ border:1px solid transparent;
+ border-radius:10px;
+ padding:20px;
+ margin:auto;
+ background:rgb(240, 240, 240)
+ }
+ 
+ #sbmt-btn{
+     width:40%;
+     margin:auto;
+     display:block
+ }
+
+
+ @media only screen and (min-width:768px) {
+    mat-card{
+        padding:50px 80px 50px 80px
+    }
+}

@@ -1,0 +1,22 @@
+<div class="container ">
+  <div class="select-wpr">
+    <mat-form-field>
+      <!-- input field to select WMS DEVICES CUSTOMER HAS  -->
+      <!-- firstId is set as default selected id, when wms component is visited or page reloaded -->
+      <mat-select [(ngModel)]="firstId" (change)="onDeviceSelect(firstId)" placeholder="select device">
+        <mat-option *ngFor="let wms of wms_devices" [value]="wms.device_id">
+          {{ wms.device_id }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button class="ml-3 noFocus" [disabled]="refreshDisabled" mat-fab (click)="refresh()"><i class="fa fa-refresh"></i></button>
+  </div>
+  <br/>
+</div>
+<!-- WIDGETS -->
+<app-loader *ngIf="!dataLoaded;else loaded"></app-loader>
+<ng-template #loaded>
+  <div class="container animated fadeIn">
+    <app-widgets [realtimeData]="realtimeData" [graphData]="averagedData" [windroseData]="windrose_data" ></app-widgets>
+  </div>
+</ng-template>

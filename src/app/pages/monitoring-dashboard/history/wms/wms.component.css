@@ -1,0 +1,13 @@
+div.select-wpr{
+    padding:10px;
+}
+
+div.col{
+  padding:5px
+}
+
+div.tile{
+background-color: rgb(241, 241, 241);
+height:150px;
+box-shadow: 2px 2px 8px rgba(0,0,0,0.3)
+}
